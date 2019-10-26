@@ -785,6 +785,15 @@ id barrier
 id beginning
 id blocking
 id bottom
+id button1
+id button13
+id button2
+id button21
+id button3
+id button34
+id button5
+id button8
+id buttonCoffe
 id buttonPanel
 id center
 id center_horizontal
@@ -888,6 +897,7 @@ id start
 id submenuarrow
 id submit_area
 id tabMode
+id tableLayout
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -896,6 +906,7 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id temaButton
 id text
 id text2
 id textName
@@ -913,6 +924,7 @@ id unchecked
 id uniform
 id up
 id useLogo
+id voteButon
 id withText
 id wrap
 id wrap_content
@@ -957,6 +969,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_login
+layout activity_vote
 layout custom_dialog
 layout notification_action
 layout notification_action_tombstone
@@ -970,6 +983,15 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+mipmap a1
+mipmap a13
+mipmap a2
+mipmap a21
+mipmap a3
+mipmap a34
+mipmap a5
+mipmap a8
+mipmap coffe
 mipmap ic_launcher
 mipmap ic_launcher_round
 string abc_action_bar_home_description
