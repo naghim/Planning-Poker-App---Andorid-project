@@ -1,7 +1,7 @@
-#Sat Oct 26 13:59:47 EEST 2019
-base.0=C\:\\Users\\Kati\\Desktop\\2019_III_Elsofelev\\Android\\NotesManager\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+#Sat Oct 26 21:57:24 EEST 2019
+base.0=E\:\\III.ev\\Android\\Labor\\NotesManager\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=C\:\\Users\\Kati\\Desktop\\2019_III_Elsofelev\\Android\\NotesManager\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
+base.1=E\:\\III.ev\\Android\\Labor\\NotesManager\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
