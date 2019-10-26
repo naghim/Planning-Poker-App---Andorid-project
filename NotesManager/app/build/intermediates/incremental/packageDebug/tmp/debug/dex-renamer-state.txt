@@ -1,7 +1,0 @@
-#Sun Oct 27 00:47:38 EEST 2019
-base.0=C\:\\Users\\Kati\\Documents\\GitHub\\android\\android\\NotesManager\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
-path.1=classes.dex
-renamed.1=classes2.dex
-path.0=classes.dex
-renamed.0=classes.dex
-base.1=C\:\\Users\\Kati\\Documents\\GitHub\\android\\android\\NotesManager\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
