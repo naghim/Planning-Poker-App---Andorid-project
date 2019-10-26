@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="edu.sapi.notesmanager"
+    package="com.example.notesmanager"
     android:targetSandboxVersion="2"
     android:versionCode="1"
     android:versionName="1.0" >
@@ -19,7 +19,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="edu.sapi.notesmanager.LoginActivity" >
+        <activity android:name="com.example.notesmanager.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
