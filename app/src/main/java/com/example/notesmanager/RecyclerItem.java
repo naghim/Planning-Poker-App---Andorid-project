@@ -4,9 +4,9 @@ public class RecyclerItem {
 
     private String name;
     private String task;
-    private int value;
+    private String value;
 
-    public RecyclerItem(String name, String task, int value){
+    public RecyclerItem(String name, String task, String value){
         this.name = name;
         this.task = task;
         this.value = value;
@@ -22,7 +22,7 @@ public class RecyclerItem {
         return this.task;
     }
 
-    public int getValue()
+    public String getValue()
     {
         return this.value;
     }

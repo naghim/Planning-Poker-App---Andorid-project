@@ -61,7 +61,7 @@ public class ListingActivity extends AppCompatActivity {
                 recyclerItemsList.add(new RecyclerItem(
                         res.getString(0),
                         res.getString(1),
-                        res.getInt(2)));
+                        res.getInt(2) == -1 ? "Coffee" : Integer.toString(res.getInt(2))));
             }
         }
     }

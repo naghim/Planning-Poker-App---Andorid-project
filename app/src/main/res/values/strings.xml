@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">NotesManager</string>
+    <string name="username">com.example.notesmanager.username</string>
 </resources>

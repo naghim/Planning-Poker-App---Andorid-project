@@ -43,22 +43,27 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 " FOREIGN KEY (TASK_ID) REFERENCES " +TABLE_TASKS+ " (TASK_ID))");
     }
 
+    public void dropTables(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        onUpgrade(db,1,2);
+    }
+
     public void insertDummyData(){
         SQLiteDatabase db = this.getWritableDatabase();
 
-        ContentValues contentValues = new ContentValues();
-        contentValues.put(COL_TASKS_2, "Alexa");
-        db.insert(TABLE_USER, null, contentValues);
+//        ContentValues contentValues = new ContentValues();
+//        contentValues.put(COL_TASKS_2, "Alexa");
+//        db.insert(TABLE_USER, null, contentValues);
 
         ContentValues contentValues1 = new ContentValues();
-        contentValues1.put(COL_TASKS_2, "Database design.");
+        contentValues1.put(COL_TASKS_2, "Login page.");
         db.insert(TABLE_TASKS, null, contentValues1);
 
-        ContentValues contentValues2 = new ContentValues();
-        contentValues2.put(COL_VOTES_2, 1);
-        contentValues2.put(COL_VOTES_3, 1);
-        contentValues2.put(COL_VOTES_4, 5);
-        db.insert(TABLE_VOTES, null, contentValues2);
+//        ContentValues contentValues2 = new ContentValues();
+//        contentValues2.put(COL_VOTES_2, 1);
+//        contentValues2.put(COL_VOTES_3, 1);
+//        contentValues2.put(COL_VOTES_4, 5);
+//        db.insert(TABLE_VOTES, null, contentValues2);
     }
 
     /**
@@ -140,6 +145,36 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor res = db.rawQuery("select * from "+TABLE_USER+" ORDER BY USER_ID DESC LIMIT 1", null);
         return res;
+    }
+
+    public void setDummyTask() {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues contentValues1 = new ContentValues();
+        contentValues1.put(COL_TASKS_2, "Database design.");
+        db.insert(TABLE_TASKS, null, contentValues1);
+
+        ContentValues contentValues2 = new ContentValues();
+        contentValues2.put(COL_TASKS_2, "Database implementation.");
+        db.insert(TABLE_TASKS, null, contentValues2);
+
+        ContentValues contentValues3 = new ContentValues();
+        contentValues3.put(COL_TASKS_2, "Static login page.");
+        db.insert(TABLE_TASKS, null, contentValues3);
+
+        ContentValues contentValues4 = new ContentValues();
+        contentValues4.put(COL_TASKS_2, "Login page functionality.");
+        db.insert(TABLE_TASKS, null, contentValues4);
+
+        ContentValues contentValues5 = new ContentValues();
+        contentValues5.put(COL_TASKS_2, "Static registration page.");
+        db.insert(TABLE_TASKS, null, contentValues5);
+
+        ContentValues contentValues6 = new ContentValues();
+        contentValues6.put(COL_TASKS_2, "Registration page functionality.");
+        db.insert(TABLE_TASKS, null, contentValues6);
+
+
     }
 }
 

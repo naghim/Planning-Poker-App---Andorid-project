@@ -14,9 +14,9 @@ import android.widget.ImageButton;
 public class VoteActivity extends AppCompatActivity {
 
     private int note, userID, taskID;
-    private String name;
     private DatabaseHelper databaseHelper;
     private EditText mTaskDescriptionText;
+    private Button mVoteButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,6 @@ public class VoteActivity extends AppCompatActivity {
         this.databaseHelper = new DatabaseHelper(this);
         mTaskDescriptionText = findViewById(R.id.taskDescriptionText);
 
-        this.setTaskAndSelected();
 
         findViewById(R.id.button1).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +69,12 @@ public class VoteActivity extends AppCompatActivity {
                 voteWhat(21);
             }
         });
+        findViewById(R.id.button34).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                voteWhat(34);
+            }
+        });
         findViewById(R.id.buttonCoffe).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,13 +82,21 @@ public class VoteActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.voteButon).setOnClickListener(new View.OnClickListener() {
+        mVoteButton = findViewById(R.id.voteButon);
+        mVoteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 listingVote();
             }
         });
 
+        //this.setTaskAndSelected();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        this.setTaskAndSelected();
     }
 
     private void setTaskAndSelected(){
@@ -97,6 +110,9 @@ public class VoteActivity extends AppCompatActivity {
         {
             this.taskID = res.getInt(0);
             mTaskDescriptionText.setText(res.getString(1));
+        }else{
+            mTaskDescriptionText.setText("There are no more tasks.");
+            mVoteButton.setEnabled(false);
         }
     }
 
